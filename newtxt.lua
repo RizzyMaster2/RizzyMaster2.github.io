@@ -1,0 +1,1 @@
+print("LOL IMAGINE INTHHE IBGIR%TUI@%@25")
