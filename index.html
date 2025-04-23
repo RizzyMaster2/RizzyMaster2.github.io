@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterDevelopment's Studios</title>
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            text-align: center;
+            background: radial-gradient(circle, #00274D 40%, #005999 70%, #00A2FF 100%);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 3rem;
+            animation: gradientPulse 10s infinite alternate ease-in-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: glowText 2s infinite alternate;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            animation: fadeInSlide 2s ease forwards;
+        }
+
+        img {
+            margin-top: 2rem;
+            width: 220px;
+            height: auto;
+            animation: zoomInRotate 2s ease forwards;
+        }
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #005999, #00A2FF);
+            margin: 2rem auto;
+            animation: drawLine 2s ease forwards;
+        }
+
+        .button-container {
+            margin-top: 2.5rem;
+            animation: fadeInUp 2s ease forwards;
+        }
+
+        .redirect-button {
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease, background-color 0.4s ease;
+        }
+
+        .redirect-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to left, #36d1dc, #5b86e5);
+        }
+
+        /* Animations */
+        @keyframes gradientPulse {
+            from {
+                background-position: center;
+            }
+            to {
+                background-position: top;
+            }
+        }
+
+        @keyframes glowText {
+            from {
+                text-shadow: 0 0 15px #00A2FF, 0 0 25px #FF0055;
+            }
+            to {
+                text-shadow: 0 0 35px #00FFCC, 0 0 45px #0044FF;
+            }
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomInRotate {
+            from {
+                opacity: 0;
+                transform: scale(0.8) rotate(-10deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        @keyframes drawLine {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-container">
+        <h1>MasterDevelopment's Studios</h1>
+        <p>Explore innovation, creativity, and passion.</p>
+        <img src="RobloxStudioLogo.png" alt="Roblox Studio Logo">
+        <div class="line"></div>
+        <div class="button-container">
+            <a href="aboutme.html" class="redirect-button">About Me</a>
+            <a href="MyGames.html" class="redirect-button">My Games</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Creations</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: radial-gradient(circle at center, #0f3460, #16213e, #1a1a2e);
+            color: #ffffff;
+            overflow: hidden;
+            animation: gradientShift 8s infinite alternate ease-in-out;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Message Styling */
+        .message {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px #ffffff, 0 0 30px #00adb5;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        /* Spinner Style */
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 8px solid rgba(255, 255, 255, 0.2);
+            border-top: 8px solid #ffffff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 25px auto;
+        }
+
+        /* "Explore More" Button */
+        .cta {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #00adb5, #00ffc3);
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to left, #00adb5, #00ffc3);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes gradientShift {
+            from {
+                background-position: center;
+            }
+            to {
+                background-position: top left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Redirecting you to an incredible experience...</div>
+        <div class="spinner"></div>
+        <button class="cta" onclick="redirect()">Skip Now</button>
+    </div>
+
+    <script>
+        // Auto redirect after 5 seconds
+        setTimeout(() => {
+            redirect();
+        }, 5000);
+
+        // Redirect function
+        function redirect() {
+            window.location.href = "https://www.roblox.com/games/73972141767658/Final-Circuit"; // Replace with your target URL
+        }
+    </script>
+</body>
+</html>

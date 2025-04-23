@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - MasterDevelopments</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif; margin: 0; text-align: center;
+            background: radial-gradient(circle, #141e30, #243b55);
+            color: white; padding: 20px;
+            animation: gradientPulse 8s infinite alternate ease-in-out;
+        }
+        header, footer {
+            background: linear-gradient(to right, #1f4068, #243b55);
+            padding: 20px;
+            color: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            animation: fadeInSlide 1s ease forwards;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            animation: glowText 1.5s infinite alternate;
+        }
+        h2 {
+            margin: 30px 0 15px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            animation: fadeText 1.5s ease forwards;
+        }
+        main {
+            max-width: 1100px; margin: 30px auto; padding: 10px;
+            animation: fadeInUp 1.5s ease forwards;
+        }
+        .project-list {
+            display: flex; gap: 30px; flex-wrap: wrap;
+            justify-content: center; margin-top: 40px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px; border-radius: 15px; width: 300px;
+            text-align: left;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+            animation: slideInScale 2s ease forwards;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .project:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.6);
+        }
+        .project p {
+            font-size: 1rem; margin-bottom: 20px; line-height: 1.6; color: #d3d3d3;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(44, 44, 44, 0.5);
+            transition: transform 0.4s, background 0.4s;
+        }
+        a:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to left, #5b86e5, #36d1dc);
+        }
+        .back-home {
+            margin: 40px auto;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, background 0.4s ease;
+        }
+        .back-home:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to left, #ff7e5f, #feb47b);
+        }
+        .highlight {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #4facfe, 0 0 20px #36d1dc;
+            animation: textPulse 2s infinite alternate;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes gradientPulse {
+            0% {
+                background-size: 100% 100%;
+            }
+            100% {
+                background-size: 150% 150%;
+            }
+        }
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes glowText {
+            from {
+                text-shadow: 0 0 15px #4facfe, 0 0 25px #36d1dc;
+            }
+            to {
+                text-shadow: 0 0 35px #4facfe, 0 0 50px #5b86e5;
+            }
+        }
+        @keyframes fadeText {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        @keyframes slideInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes textPulse {
+            from {
+                color: #36d1dc;
+            }
+            to {
+                color: #5b86e5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>Explore Creativity and Innovation</p>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Games</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Final Circuit</h3>
+                    <p>A suspenseful survival game where Survivors repair Circuit Breakers while evading a relentless Killer.</p>
+                    <a href="JoinFinalCircuit.html" target="_blank">Play Now</a>
+                </div>
+            </div>
+            <p class="highlight">Discover more exciting games soon!</p>
+            <a href="index.html" class="back-home">Back to Home</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MasterDevelopments Studios. All rights reserved.</p>
+    </footer>
+</body>
+</html>

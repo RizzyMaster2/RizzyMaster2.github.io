@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - MasterDevelopment's Studios</title>
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            text-align: center;
+            background: radial-gradient(circle at top, #00274D, #005999, #00A2FF);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            padding: 3rem;
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85));
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeIn 1.8s ease-in forwards;
+        }
+
+        /* Heading Style */
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            animation: glowText 2s infinite alternate;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.4rem;
+            line-height: 2;
+            margin: 1.5rem 0;
+        }
+
+        /* Moving Gradient Text Effect */
+        .moving-gradient {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: transparent;
+            background: linear-gradient(90deg, #FF0055, #00FFCC, #0044FF);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradientShift 4s infinite linear;
+        }
+
+        /* Button Styles */
+        button {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #0078D7;
+            border: none;
+            border-radius: 12px;
+            padding: 1rem 3rem;
+            cursor: pointer;
+            margin-top: 2rem;
+            margin-right: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005A9E;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes glowText {
+            from {
+                text-shadow: 0 0 12px #00A2FF, 0 0 24px #FF0055;
+            }
+            to {
+                text-shadow: 0 0 36px #00FFCC, 0 0 48px #0044FF;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>About Me</h1>
+        <p>
+            I am MasterDevelopments, the owner and creator of the game 
+            <span class="moving-gradient">Final Circuit</span> and many other innovative projects.
+            My passion lies in developing captivating digital experiences that bring imagination and creativity to life.
+        </p>
+        <p>
+            Every project is a chance to challenge myself, push the limits of what’s possible, 
+            and build immersive worlds for people to explore and enjoy. Thank you for being a part of this journey—
+            there’s so much more to create, and I can’t wait to share it all with you!
+        </p>
+        <button onclick="window.location.href='MyGames.html';">See My Games</button>
+        <button onclick="window.location.href='index.html';">Back to Home</button>
+    </div>
+</body>
+</html>
